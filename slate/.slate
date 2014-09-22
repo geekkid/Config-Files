@@ -1,0 +1,21 @@
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias tophalf move screenOriginX;screenOriginY screenSizeX;screenSizeY/2
+alias bottomhalf move screenOriginX;screenOriginY+(screenSizeY/2) screenSizeX;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind return:ctrl;alt ${full}
+bind left:ctrl;alt ${lefthalf}
+bind right:ctrl;alt ${righthalf}
+bind down:ctrl;alt ${bottomhalf}
+bind up:ctrl;alt ${tophalf}
+
+bind 1:ctrl;alt focus 'iTerm'
+bind 2:ctrl;alt focus 'Eclipse'
+bind 3:ctrl;alt focus 'Xcode'
+bind 0:ctrl;alt focus 'iTerm'
+bind 9:ctrl;alt focus 'Eclipse'
+bind 8:ctrl;alt focus 'Xcode'
