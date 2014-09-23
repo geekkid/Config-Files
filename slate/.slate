@@ -19,3 +19,4 @@ bind 3:ctrl;alt focus 'Xcode'
 bind 0:ctrl;alt focus 'iTerm'
 bind 9:ctrl;alt focus 'Eclipse'
 bind 8:ctrl;alt focus 'Xcode'
+
